@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(36, 37, 46);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(168, 181, 221);
+    border-radius: 3px;
+
+}
+
+/*fondo de pantalla*/
+
+body{
+    background: #cfdbe2;
+    animation: fadeIn 2s ease forwards;
+}
+
+*{
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*panel de navegacion*/
+
+nav{
+    background: #112170;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+        z-index: 100;
+    }
+
+nav h1{
+    position: absolute;
+    padding: 20px 50px;
+    margin-right: 20px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #cfdbe2;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a span{
+display: none;
+}
+
+.menubtn{
+    font-size: 30px;
+    color: #cfdbe2;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menubar{
+    display: none;
+}
+
+/*banner*/
+
+#banner{
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+#banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.photo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#banner h3{
+    z-index: 2;
+    position: absolute;
+    bottom: 45%;
+    font-size: 2.5rem;
+    left: 28%;
+    color: rgb(255, 255, 255);
+}
+
+#banner .ban{
+    z-index: 2;
+    position: absolute;
+    background: transparent;
+    border: 2px solid #e7e6ee;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    bottom: 30%;
+    left: 45%;
+    color: #e7e6ee;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*buscador*/
+
+#buscador{
+    margin-top: 5%;
+    margin-left: 3%;
+    position:relative;
+    animation: slideInFromLeft 1s ease forwards;
+
+}
+
+#buscador input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #1c4583;
+    width: 85%;
+    padding: 1em 0.3em;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#buscador .uwu:focus{
+    border-bottom: 2px solid #1c4583;
+    border: none;
+}
+
+#buscador button{
+    background: #1c4583;
+    color: #ffff;
+    padding: 1% 2%;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Secciones*/
+
+#vermas{
+    margin-top: 5%;
+    animation: slideInFromLeft 1s ease forwards;
+
+}
+
+.ver{
+    font-weight: 600;
+    margin-left: 2%;
+    font-size: 20px;
+    margin-bottom: -3.5%;
+}
+
+.mas{
+    background: transparent;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 90%;
+    margin-right: 2%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #0f0f0f;
+    cursor:pointer;
+}
+
+/*seccion*/
+
+.ofertas{
+    max-height: 430px;
+    display: flex;
+    margin-top: 2.5%;
+    margin-left: 1.3%;
+    margin-right: 1%;
+    background: #e7e6ee;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px rgb(131, 116, 121);
+    overflow-x: auto; 
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.cont{
+    cursor: pointer;
+    min-width: 220px;
+  margin-left: 3.4%;
+  margin-right: 3.4%;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  transition: transform 0.3s;
+ }
+
+ .cont:hover{
+    transform: scale(.90); 
+}
+
+.pluc{
+   margin-top: 10%;
+   width: 200px;
+   height: 210px;
+    border-radius: 10px;
+ }
+
+ .potaxie{
+  font-size: 20px;
+ }
+
+.fife{
+  font-size: 25px;
+ }
+
+ /*del item seleccionado*/
+
+ /*.seleccion{
+    z-index: 1000;
+    background: #cfdbe2;
+    transition: .5s ease;
+    opacity: 1;
+    width: 30%;
+    height: 93%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 8px rgb(131, 116, 121);
+    overflow: hidden;;
+ }*/
+
+.presio{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #47748d;
+}
+
+.tula{
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.preview{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 999; 
+}
+
+.preview.activo {
+    display: flex;
+}
+
+.preview .comtenido{
+    position: relative;
+    text-align: center;
+    background: #ffff;
+    padding: 45px 18px;
+    display: none;
+    margin: 15px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.preview .comtenido.activo {
+    display: block;
+}
+
+.preview .comtenido.active{
+    display: inline-block;
+}
+
+.preview .comtenido img{
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.preview .comtenido .cerrar{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.preview .comtenido .size{
+    margin-bottom: 30px;
+}
+
+.preview .comtenido button{
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    background: #5f9af3;
+    cursor: pointer;
+}
+
+.preview .comtenido button:hover{
+    background: #4d88df;
+}
+
+ /*fondo borroso al abrir item*/
+
+ /*.fondo-borroso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 999; 
+    display: none;
+}*/
+
+ /*pie de pagina*/
+
+footer{
+    background-color: #1C1D22;
+}
+
+.infocja{
+    margin: 15px auto;
+    padding: 30px 0 140px 70px;
+    color: white;
+    margin-bottom: -1%;
+    display: flex;
+    font-weight: 200;
+}
+
+.wasa{
+    display: flex;
+}
+
+i{
+    margin-top: 5%;
+    margin-right: 5%
+}
+
+.dib{
+    margin-right: 19%;
+    padding: 0;
+}
+
+.log{
+    margin-right: -5%;
+    padding: 0;
+}
+
+.contactanos{
+    margin-top: 10px;
+}
+
+.dibu{
+    margin-right: 19%;
+    padding: 0 ;
+}
+
+.dibu a{
+    margin-right: 10%;
+    margin-top: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #cfdbe2;
+    transition: all .3s;
+}
+
+.dibu a:hover{
+    color: #47748d;
+    transition: all .3s;
+}
+
+hr{
+    border:0.5px solid #4b4c53;
+}
+
+.final{
+    text-align: center;
+    color: #cfdbe2;
+}
+
+/*animacion*/
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 1070px){
+
+    /*banner*/
+
+    #banner .ban{
+        bottom: 23%;
+        font-size: 1.2rem;
+        left: 45%;
+    }
+
+    #banner h3{
+        font-size: 2rem;
+        bottom: 40%;
+        left: 28%;
+    }
+
+    body{
+        font-size: 90%;
+    }
+
+    .infocja{
+        margin: 20px auto;
+        padding: 2% 0 10% 3%;
+    }
+
+    .mas{
+        margin-left: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+    /*la barra azul de navegacion*/
+
+    nav{
+        position: fixed;
+        z-index: 100;
+    }
+
+    .menubtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#0f0f0f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+        text-align: left;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px 0;
+        line-height: 30px;
+        transition: all .3s ease;
+    }
+
+    nav ul li:hover{
+        font-size: 25px;
+        transition: all .3s ease;
+    }
+
+    #menubar:checked ~ ul{
+        left: 0;
+    }
+
+    p{
+        display: block;
+    }
+
+    nav ul li a span{
+        display: inline;
+        gap: 4px;
+        text-decoration: none;
+    }
+
+    /*banner*/
+
+    .photo{
+        height: 300px;
+    }
+
+    #banner{
+        height: 300px;
+    }
+
+    #banner .ban{
+        bottom: 18%;
+        font-size: 0.9rem;
+        left: 42%;
+    }
+
+    #banner h3{
+        font-size: 1.5rem;
+        bottom: 40%;
+        left: 18%;
+    }
+
+    /*el pie de pagina*/
+
+    .infocja{
+        margin: 20px auto;
+        padding: 4% 0 10% 4.5%;
+    }
+
+    .dibu a{
+        font-size: 20px;
+    }
+
+    .dib{
+        margin-right: 5%;
+    }
+
+    .log{
+        display: none;
+    }
+
+    /*seccion de ofertas*/
+
+    #vermas{
+        margin-top: 15%;
+    }
+
+    .mas{
+        margin-left: 80%;
+        margin-top: -5%;
+        font-size: 15px;
+    }
+
+    .ver{
+        margin-top: 15%;
+    }
+
+    .pluc{
+        width: 120px;
+        height: 130px;
+    }
+
+     .potaxie{
+        font-size: 15px;
+    }
+
+    .fife{
+        font-size: 18px;
+    }
+
+    /*buscador*/
+
+    #buscador{
+        margin-top: 10%;
+    }
+
+    #buscador input{
+        width: 65%;
+        margin-left: 10%;
+    }
+
+    #buscador button{
+        padding: 3% 3%;
+    }
+
+}
